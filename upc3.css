@@ -1,0 +1,129 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 1rem;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Button to go to the top */
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0f5aa0; /* Blue color */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#toTopBtn:hover {
+    background-color: #0f5aa0; /* Darker blue */
+}
+
+/* Button to switch dark/light mode */
+#modeSwitchBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0f5aa0; /* Blue color */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#modeSwitchBtn:hover {
+    background-color: #0f5aa0; /* Darker blue */
+}
+
+/* Button to go back to the previous page */
+#backBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0f5aa0; /* Blue color */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#backBtn:hover {
+    background-color: #0f5aa0; /* Darker blue */
+}
