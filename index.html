@@ -106,6 +106,22 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
+                flex-direction: column;
+                gap: 1rem;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
             }
 
             .hero h1 {
@@ -122,14 +138,25 @@
                 font-size: 1.5rem;
             }
         }
+
+        .menu-toggle {
+            display: none;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <h1>Ankit Pramaik</h1>
+            <button class="menu-toggle">☰</button>
             <div class="nav-links">
                 <a href="#home">Home</a>
+                <a href="#about">About Me</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -148,7 +175,6 @@
 
     <section class="about" id="about">
         <h2>About Me</h2>
-ened developer is written change the background color to black
         <p><strong>My School:</strong></p>
         <p><strong>Primary School:</strong> <a href="https://www.facebook.com/PranabBharatiSchool/" target="_blank">Pranab Bharati</a></p> 
         <p><strong>High School:</strong> <a href="https://admission.rkmsargachi.org/" target="_blank">Sargachi R.K. Mission High School</a></p>
@@ -161,17 +187,16 @@ ened developer is written change the background color to black
         <h2>My Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Project description goes here</p>
+                <h3>My Robotics Projects</h3>
+                <p>Here is a brief description about the projects made by me in Saraswati Puja Exhibition 2025. To learn more click on the button.</p>
+                <button onclick="window.location.href='https://ankit404developer.github.io/Ankit404developer/'">Learn More</button>
             </div>
             <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Project description goes here</p>
+                <h3>My Upcoming Projects</h3>
+                <p>There are so many project ideas in my mind. I want to create these. I want to make this possible. To learn more click on the button.</p>
+                <button onclick="window.location.href='learnmore.html'">Learn More</button>
             </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Project description goes here</p>
-            </div>
+            
         </div>
     </section>
 
@@ -183,6 +208,8 @@ ened developer is written change the background color to black
             <textarea rows="5" placeholder="Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+        <p>Email: <a href="mailto:your-email@examplm">ankit404developer@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+91 9046001938</a></p>
     </section>
 
     <script src="script.js"></script>
@@ -208,14 +235,9 @@ ened developer is written change the background color to black
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
-        // Add mobile menu button (you can add this in your HTML)
-        // <button class="menu-toggle">☰</button>
-        // Then uncomment this code:
-        /*
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('show');
         });
-        */
     </script>
 </body>
 </html>
